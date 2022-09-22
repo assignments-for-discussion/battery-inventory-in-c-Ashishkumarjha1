@@ -13,7 +13,7 @@ struct CountsByUsage countBatteriesByUsage(const int* cycles, int nBatteries) {
   {
     if(cycles[i]<410)
     counts.lowCount++;
-    else if(cycles[i]>410 &&cycles[i]<909)
+    else if(cycles[i]>=410 &&cycles[i]<=909)
     counts.mediumCount++;
     else
     counts.highCount++;
